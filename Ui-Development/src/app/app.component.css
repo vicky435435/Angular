@@ -122,3 +122,124 @@
     color: white;
     font-size: 16px;
 }
+
+.up{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.back{
+    margin: 44px 0 0 30px;
+    color: #2A3547;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    text-decoration-line: underline;
+    background: none;
+    border: none;
+}
+
+.save{
+    margin: 30px 167px 0 0px;
+    display: inline-flex;
+    height: 40px;
+    padding: 13px 40.11px 15px 40.89px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: #5A6A85;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    background: none;
+    border-radius: 7px;
+    border: 1px solid #E0E0E0;
+}
+
+
+.firline1{
+    margin: 44px 0px 0 30px;
+    color: #2A3547;
+    font-family: Plus Jakarta Sans;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.secline1{
+    margin: 32px 0px 0 30px;
+    color: #5A6A85;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.dvbtn{
+    margin: 16px 0px 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.s1btn{
+    display: flex;
+    width: 166px;
+    padding: 10px 12px;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    background: #B40665;
+    border: none;
+    text-align: center;
+    color: white;
+}
+
+.s1btn3{
+    margin: 0px 167px 0 0px;
+}
+
+.botdv1{
+    margin: 32px 0px 0 30px;
+    display: flex;
+    width: 558px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-radius: 10px;
+    background: #F5F5F7;
+}
+
+.dvnext{
+    margin: 310px 167px 30px 0px;
+    float: right;
+}
+
+.next{
+    display: flex;
+    width: 166px;
+    height: 40px;
+    padding: 13px 0px 15px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    border-radius: 7px;
+    background: #B40665;
+    border: none;
+}
