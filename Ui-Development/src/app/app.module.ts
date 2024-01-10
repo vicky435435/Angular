@@ -7,12 +7,15 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
-import { CampaignComponent } from './campaign/campaign.component';
+import { CampaignComponent } from './component/campaign/campaign.component';
+import { TestComponent } from './component/test/test.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    CampaignComponent
+    CampaignComponent,
+    TestComponent,
   ],
   imports: [
     BrowserModule,
