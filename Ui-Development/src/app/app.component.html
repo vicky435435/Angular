@@ -3,19 +3,25 @@
   <div class="left-side">
 
     <div class="three-selectors">
-      <button class="crative" id="{{crativecol}}" mat-stroked-button (click)="crative()">Basic</button>
-      <button class="crative" id="{{whatsappcol}}" mat-stroked-button (click)="whatsapp()">Basic</button>
-      <button class="crative" id="{{smscol}}" mat-stroked-button (click)="sms()">Basic</button>
+      <button class="crative" id="{{crativecol}}" mat-stroked-button (click)="crative()">Creative</button>
+      <button class="crative" id="{{whatsappcol}}" mat-stroked-button (click)="whatsapp()">WhatsApp</button>
+      <button class="crative" id="{{smscol}}" mat-stroked-button (click)="sms()">SMS</button>
     </div>
 
     <div class="cimg">
-      <img class="crativeimg" src="/assets/images/CreativeTemplate.png" alt="templeat">
+      <img *ngIf="crativecol" class="crativeimg" src="/assets/images/CreativeTemplate.png" alt="Crative">
+      <img *ngIf="whatsappcol" class="crativeimg" id="whatsappimg" src="/assets/images/iPhone.png" alt="Shatsapp">
+      <img *ngIf="smscol" class="crativeimg" id="smsimg" src="/assets/images/sms.png" alt="SMS">
     </div>
 
   </div>
 
   <!-- Right Slide -->
-  <div class="right-side">2
-
+  <div class="right-side">
+    <button class="close"><img src="/assets/images/round-close.png" alt="Close Btn"></button>
+    <p class="firline">Present Campaign Name Here (5th Oct - 11th Nov)</p>
+    <p class="secline">Campaign Title Here</p>
+    <button class="freeitem"  mat-stroked-button> <img src="/assets/images/gift.png" alt="SMS">Free Item</button>
+    <button class="rightbtn"  mat-stroked-button>Customize & Send</button>
   </div>
 </div>
