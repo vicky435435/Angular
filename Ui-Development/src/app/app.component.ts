@@ -7,4 +7,25 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Ui-Development';
+  crativecol = 'crative';
+  whatsappcol = '';
+  smscol = '';
+
+  crative(){
+    this.whatsappcol ='';
+    this.smscol = '';
+    this.crativecol = 'crative';
+  }
+
+  whatsapp(){
+    this.smscol = '';
+    this.crativecol = '';
+    this.whatsappcol ='whatsapp';
+  }
+
+  sms(){
+    this.crativecol = '';
+    this.whatsappcol ='';
+    this.smscol = 'sms';
+  }
 }

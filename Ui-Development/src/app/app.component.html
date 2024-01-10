@@ -3,10 +3,15 @@
   <div class="left-side">
 
     <div class="three-selectors">
-      <button mat-stroked-button>Basic</button>
-      <button mat-stroked-button>Basic</button>
-      <button mat-stroked-button>Basic</button>
+      <button class="crative" id="{{crativecol}}" mat-stroked-button (click)="crative()">Basic</button>
+      <button class="crative" id="{{whatsappcol}}" mat-stroked-button (click)="whatsapp()">Basic</button>
+      <button class="crative" id="{{smscol}}" mat-stroked-button (click)="sms()">Basic</button>
     </div>
+
+    <div class="cimg">
+      <img class="crativeimg" src="/assets/images/CreativeTemplate.png" alt="templeat">
+    </div>
+
   </div>
 
   <!-- Right Slide -->
