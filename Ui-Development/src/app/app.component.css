@@ -1,0 +1,46 @@
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
+.left-side{
+    background-color: #F5F5F7;
+}
+
+.crative{
+    height: 40px;
+    padding: 13px 49.61px 15px 49.89px;
+    border: none;
+}
+
+#crative{
+    border-radius: 7px;
+     background: #B40665;
+}
+
+#whatsapp{
+    border-radius: 7px;
+     background: #B40665;
+}
+
+#sms{
+    border-radius: 7px;
+     background: #B40665;
+}
+    
+
+.three-selectors{
+    text-align: center;
+    margin: 60px 0 0 0;
+}
+
+.cimg{
+    margin-top: 95px;
+    text-align: center;
+}
+
+.crativeimg{
+    border-radius: 20px;
+    width: 370px;
+}
