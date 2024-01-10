@@ -1,0 +1,18 @@
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
+.left-side{
+    background-color: #F5F5F7;
+}
+
+.three-selectors{
+    text-align: center;
+    margin: 10% 0 0 0;
+}
+
+.selector{
+    background-color: #b40665;
+}
