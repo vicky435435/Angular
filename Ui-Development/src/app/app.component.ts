@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Ui-Development';
+  screen = 1;
   crativecol = 'crative';
   whatsappcol = '';
   smscol = '';
@@ -27,5 +28,17 @@ export class AppComponent {
     this.crativecol = '';
     this.whatsappcol ='';
     this.smscol = 'sms';
+  }
+
+  customizeandsend(){
+    this.screen = 1;
+  }
+
+  back(value: number){
+    this.screen = value;
+  }
+
+  Next(value: number){
+    this.screen = value
   }
 }
