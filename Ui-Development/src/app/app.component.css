@@ -424,3 +424,160 @@ align-items: center;
 /* gap: -0.258px; */
 margin: 20px;
 }
+
+
+
+/*  screen 5 css */
+
+.uploadBtn{
+display: flex;
+width: 460px;
+height: 40px;
+padding: 10px 0px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+border-radius: 7px;
+border: 1px solid #B40665;
+color: #B40665;
+background: #FFF;
+margin-left:  25px;
+}
+
+.fiveText{
+ color: #7C8FAC;
+/* Small */
+font-family: Plus Jakarta Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 16.8px */
+margin-left:  25px;
+}
+
+.linkCopy{
+    color: #7C8FAC;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */ 
+}
+
+.selectPhone{
+color: var(--Light-Theme-Gray-Dark-Blue-Grey, #2A3547);
+/* Normal Semibold */
+font-family: Plus Jakarta Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; /* 19.6px */
+letter-spacing: -0.14px;
+}
+
+
+/* SCREEN 6 */
+
+.linkBox{
+    h2{
+ flex: 1 0 0;
+ margin-bottom: 0 !important;
+color: #B40665;
+font-family: Plus Jakarta Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; /* 28px */
+letter-spacing: -0.2px;
+margin-left: 20px;
+p{
+    display: inline;
+}
+    }
+    mat-icon{   
+        color: #B40665;
+        margin-left: 20px;
+    span{
+        color: #B40665;
+        font-family: Plus Jakarta Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 28px */
+        letter-spacing: -0.2px;
+        margin-left: 20px;
+    }
+  }
+}
+
+
+/* Screen 7  */
+
+.seven{
+color: #7C8FAC;
+text-align: center;
+font-family: Plus Jakarta Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 19.6px */
+}
+
+.uploadBtnfive{
+ display: inline-flex;
+height: 40px;
+padding: 10px 62px 10px 41px;
+align-items: center;
+flex-shrink: 0;
+border-radius: 7px;
+border: 1px solid #B40665;
+background: #FFF;
+}
+
+/* Screen 9 */
+
+.nineBtn{
+    display: flex;
+    width: 558px;
+    height: 20px;
+    padding: 10px 12px;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #B40665;
+    margin-left: 20px;
+    color: white;
+}
+
+.nineBtntwo{
+    border-radius: 4px;
+    border: 1px solid #D9D9D9;
+    background: #FFF;   
+display: inline-flex;
+padding: 13px 340px 13px 12px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 10px;
+/* color: #5A6A85; */
+margin-left: 20px;
+h4{
+color: #5A6A85;
+/* leading-trim: both;
+text-edge: cap; */
+font-family: Plus Jakarta Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+letter-spacing: -0.28px;
+}
+p{
+color: #5A6A85;
+font-family: Plus Jakarta Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px; /* 175% */
+}
+}
