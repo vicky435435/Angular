@@ -210,8 +210,326 @@
     <p class="sedlin2 con ltex upnot">Recommended size 512 x 512 px in JPG, GIF or PNG format upto max size of 10MB</p>
 
 
-    <div class="dvnext">
-      <button class="next" (click)="Next(5)">Next</button>
+      <div>
+        <p class="secline1"><strong>Banner Image</strong></p>
+
+        <div class="fileInputBox"><input type="file" /> Upload your Image</div>
+        <p>
+          Recommended size 512 x 512 px in JPG, GIF or PNG format upto max size
+          of 10MB
+        </p>
+       
+
+        <div class="imagesBox">
+          <div >
+            <img src="/assets/images/blog-img1.png" alt="">
+            <h4>My Library</h4>
+            <p>17 Images | 5 Videos</p>
+          </div>
+
+          <!-- <div>
+            <img src="/assets/images/blog-img1.png" alt="">
+            <h4>My Library</h4>
+            <p>17 Images | 5 Videos</p>
+          </div>
+
+          <div>
+            <img src="/assets/images/blog-img1.png" alt="">
+            <h4>My Library</h4>
+            <p>17 Images | 5 Videos</p>
+          </div>
+
+          <div>
+            <img src="/assets/images/blog-img1.png" alt="">
+            <h4>My Library</h4>
+            <p>17 Images | 5 Videos</p>
+          </div> -->
+        </div>
+        <div class="dvnext">
+          <button class="next" (click)="Next(5)">Next</button>
+        </div>
+      </div>
     </div>
   </div>
+
+
+
+  <!-- screen 5  -->
+
+  
+  <div class="right-side" *ngIf="screen == 5">
+    <div class="up">
+      <button class="back" (click)="back(0)">&#60;Back</button>
+      <button class="save">Save & Exit</button>
+    </div>
+
+    <div>
+      <p class="firline1">Review WhatsApp Message</p>
+      <!-- <p class="secline1"><strong>Edit message</strong></p> -->
+
+      <p class="thilin2">Edit message</p>
+      <textarea
+        class="area"
+        matInput
+        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      ></textarea>
+      <p class="linkCopy">Campaign link: l.lol.io/sKjh0 </p>
+
+
+
+      <div>
+        <p class="thilin2">Header</p>
+
+        <div class="imagesBox">
+          <div class="rad">
+            <mat-radio-group aria-label="Select an option">
+              <mat-radio-button value="1">Defult Image</mat-radio-button>
+              <mat-radio-button value="2">Add your own</mat-radio-button>
+            </mat-radio-group>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        
+        <div>
+          <button class="uploadBtn"><img src="/assets/images/material-symbols_upload.png" alt="">Upload</button>
+          <p class="fiveText">Recommended size 512 x 512 px in JPG, GIF or PNG format upto max size of 10MB</p>
+        </div>
+    
+         
+
+        <div>
+          <p class="thilin2">Select Phone Number</p>
+          <input type="number" class="inptitle" matInput placeholder="Contact number" />
+          
+        </div>
+
+        <div>
+          <p class="thilin2">Buttons</p>
+          <br>
+          <p class="thilin2">Buttons1</p>
+          
+        </div>
+
+
+
+        <div>
+          <p class="thilin2">Link</p>
+          <input type="text" class="inptitle" matInput placeholder="l.fig.wi/90PuF" />  
+        </div>
+
+
+        <div>
+          <p class="thilin2">Button label</p>
+          <input type="text" class="inptitle" matInput placeholder="Learn more" />  
+          <img src="" alt="">
+        </div>
+
+        <div class="dvnext">
+          <button class="next" (click)="Next(6)">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--  screen 6  -->
+
+
+  <div class="right-side" *ngIf="screen == 6">
+    <div class="up">
+      <button class="back" (click)="back(0)">&#60;Back</button>
+      <button class="save">Save & Exit</button>
+    </div>
+
+    <div>
+      <p class="firline1">Review SMS  </p>
+      <!-- <p class="secline1"><strong>Edit message</strong></p> -->
+
+      <p class="thilin2">Edit SMS <span>Edit SMS (Character length: 484 / 2 credit)</span></p>
+
+      <textarea
+        class="area"
+        matInput
+        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        
+        To stop receiving messages from Sample Cafe click l.lol.io/jki9o."
+      ></textarea>
+      <p class="linkCopy">Campaign link: l.lol.io/sKjh0 </p>
+
+
+
+      <div>
+        <p class="thilin2">Campaign Link:</p>
+
+        <div class="imagesBox">
+          <div class="rad">
+            <mat-radio-group aria-label="Select an option">
+              <mat-radio-button value="1">Figwi Link</mat-radio-button>
+              <mat-radio-button value="2">Custom Link</mat-radio-button>
+            </mat-radio-group>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="linkBox">
+          <h2>l.fig.wi/f_7pir</h2>
+          <p>This link will take your customer to the campaign page. </p> 
+          <mat-icon>file_copy</mat-icon><span>Copy</span>  
+        </div>
+
+      </div>
+      <div class="dvnext">
+        <button class="next" (click)="Next(7)">Send for approval</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!--  SCREEN 7 -->
+
+  <div class="right-side" *ngIf="screen == 7">
+    <div class="up">
+      <button class="back" (click)="back(6)">&#60;Back</button>
+      <button class="save">Save & Exit</button>
+    </div>
+
+    <div>
+      <p class="firline1">Review SMS  </p>
+      <!-- <p class="secline1"><strong>Edit message</strong></p> -->
+
+      <p class="thilin2">Edit SMS <span>Edit SMS (Character length: 484 / 2 credit)</span></p>
+
+      <textarea
+        class="area"
+        matInput
+        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        
+        To stop receiving messages from Sample Cafe click l.lol.io/jki9o."
+      ></textarea>
+      <p class="linkCopy">Campaign link: l.lol.io/sKjh0 </p>
+
+
+
+      <div>
+        <p class="thilin2">Campaign Link:</p>
+
+        <div class="imagesBox">
+          <div class="rad">
+            <mat-radio-group aria-label="Select an option">
+              <mat-radio-button value="1">Figwi Link</mat-radio-button>
+              <mat-radio-button value="2">Custom Link</mat-radio-button>
+            </mat-radio-group>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div>
+          <p class="thilin2">Enter your custom link that you want to include instead of Figwi campaign link.</p>
+          <input type="text" class="inptitle" matInput placeholder="https://order.example.com" />  
+        </div>
+        <br>
+        <br>
+      
+        <div class="seven">
+          <p>Or</p>
+          <div>
+            <section class="example-section">
+              <mat-checkbox class="example-margin checkbox"
+                >Convert file into link</mat-checkbox
+              >
+            </section>
+          </div>
+          <button class="uploadBtnfive"><img src="/assets/images/material-symbols_upload.png" alt="">Upload Your File</button>
+
+        </div>
+
+     
+      </div>
+      <div class="dvnext">
+        <button class="next" (click)="Next(8)">Send for approval</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- SCREEN 8 -->
+
+  <div class="right-side" *ngIf="screen == 8">
+    <div class="up">
+      <button class="back" (click)="back(7)">&#60;Back</button>
+      <button class="save">Save & Exit</button>
+    </div>
+
+    <div>
+      <p class="firline1">Review Email </p>
+      <!-- <p class="secline1"><strong>Edit message</strong></p> -->
+
+      <p class="thilin2">Subject Email</p>
+      <input type="text" class="inptitle" matInput placeholder="Pre-defined subject goes here" /> 
+
+      <div class="dvnext">
+        <button class="next" (click)="Next(9)">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 9  -->
+
+  <div class="right-side" *ngIf="screen == 9">
+    <div class="up">
+      <button class="back" (click)="back(8)">&#60;Back</button>
+      <button class="save">Save & Exit</button>
+    </div>
+
+    <div>
+      <p class="firline1">Who do you want to send to? </p>
+      <p class="thilin2">Select audience</p>
+      <br>
+
+  
+
+      <div class="nineBtn">
+       All Customers (2090)
+      </div>
+      <br>
+
+      <div class="nineBtntwo">
+        <h4>Target Group</h4>
+      </div>
+      <br>
+
+      <!-- <div class="nineBtntwo">
+        <h4>Advanced Filters</h4>
+      </div> -->
+
+
+      
+
+
+      <div class="dvnext">
+        <button class="next" (click)="Next(10)">Next</button>
+      </div>
+    </div>
+  </div>
+
+  
 </div>
