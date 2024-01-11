@@ -377,3 +377,50 @@ align-items: flex-start;
     align-items: flex-start;
     gap: 12px;
 }
+
+
+
+
+/*  screen 4  */
+
+.fileInputBox{
+    display: flex;
+    height: 80px;
+    padding: 0px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+p{
+ color: #7C8FAC;
+/* Small */
+font-family: Plus Jakarta Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 16.8px */
+margin-left: 10px;
+
+}
+
+.ColorBox{
+display: flex;
+padding: 7px 7px 7px 12px;
+justify-content: flex-end;
+align-items: center;
+gap: 158px;
+}
+
+.imagesBox{
+/* display: flex; */
+width: 166px;
+height: 26.78px;
+padding: 0px 41.587px 0px 41.413px;
+/* flex-direction: column; */
+justify-content: center;
+align-items: center;
+/* gap: -0.258px; */
+margin: 20px;
+}

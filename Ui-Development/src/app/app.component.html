@@ -178,7 +178,6 @@
       <button class="next" (click)="Next(3)">Next</button>
     </div>
   </div>
-  
 
   <!-- screen 3  -->
   <!-- Right Slide 3-->
@@ -188,18 +187,18 @@
       <button class="save">Save & Exit</button>
     </div>
 
-    <div >
+    <div>
       <p class="firhed2">Add terms of your campaign</p>
 
       <div class="date">
         <p class="sedlin2">Campaign starts on</p>
         <div>
-         <input type="date">
+          <input type="date" />
         </div>
 
         <p class="sedlin2">Campaign expires on</p>
         <div>
-          <input type="date">
+          <input type="date" />
         </div>
       </div>
       <br />
@@ -247,20 +246,87 @@
       <p class="sedlin2">Contact Number</p>
       <input class="inptitle" matInput placeholder="Contact number" />
       <!-- <input class="inptitle" matInput placeholder="₹180 OFF"> -->
-       <p class="sedlin2">This will be included in your Campaign link, SMS, & WhatsApp</p>
+      <p class="sedlin2">
+        This will be included in your Campaign link, SMS, & WhatsApp
+      </p>
     </div>
-
 
     <!--  screen 4  -->
 
     <div class="dvnext nex2">
-    
-      <div>
-        <p class="firhed2">Review Campaign Creative</p>
-
-      </div>
-
       <button class="next" (click)="Next(4)">Next</button>
     </div>
   </div>
+
+  <div class="right-side" *ngIf="screen == 4">
+    <div class="up">
+      <button class="back" (click)="back(0)">&#60;Back</button>
+      <button class="save">Save & Exit</button>
+    </div>
+
+    <div>
+      <p class="firline1">Review Campaign Creative</p>
+      <p class="secline1"><strong>Logo</strong></p>
+
+      <div class="fileInputBox"><input type="file" /> Upload your Logo</div>
+      <p>
+        Recommended size 512 x 512 px in JPG, GIF or PNG format upto max size of
+        10MB
+      </p>
+
+      <div class="colorBox">
+        <p class="secline1"><strong>Theme Color</strong></p>
+        <input type="color" name="" id="" />
+
+        <p class="secline1"><strong>Text Color</strong></p>
+        <input type="color" name="" id="" />
+      </div>
+
+      <div>
+        <p class="secline1"><strong>Banner Image</strong></p>
+
+        <div class="fileInputBox"><input type="file" /> Upload your Image</div>
+        <p>
+          Recommended size 512 x 512 px in JPG, GIF or PNG format upto max size
+          of 10MB
+        </p>
+       
+
+        <div class="imagesBox">
+          <div >
+            <img src="/assets/images/blog-img1.png" alt="">
+            <h4>My Library</h4>
+            <p>17 Images | 5 Videos</p>
+          </div>
+
+          <!-- <div>
+            <img src="/assets/images/blog-img1.png" alt="">
+            <h4>My Library</h4>
+            <p>17 Images | 5 Videos</p>
+          </div>
+
+          <div>
+            <img src="/assets/images/blog-img1.png" alt="">
+            <h4>My Library</h4>
+            <p>17 Images | 5 Videos</p>
+          </div>
+
+          <div>
+            <img src="/assets/images/blog-img1.png" alt="">
+            <h4>My Library</h4>
+            <p>17 Images | 5 Videos</p>
+          </div> -->
+        </div>
+        <div class="dvnext">
+          <button class="next" (click)="Next(2)">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- screen 5  -->
+
+  
 </div>
