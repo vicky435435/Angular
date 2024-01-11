@@ -12,7 +12,7 @@ import {MatRadioModule} from '@angular/material/radio';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
