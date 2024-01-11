@@ -36,18 +36,8 @@
   </div>
 
   <!-- Left Slide 1-->
-  <div class="left-side" *ngIf="
-      screen == 1 ||
-      screen == 2 ||
-      screen == 3 ||
-      screen == 4 ||
-      screen == 5 ||
-      screen == 6 ||
-      screen == 7 ||
-      screen == 8 ||
-      screen == 9 ||
-      screen == 10
-    ">
+  <div class="left-side"
+    *ngIf=" screen == 1 ||screen == 2 ||screen == 3 ||screen == 4 ||screen == 5 ||screen == 6 ||screen == 7 ||screen == 8 ||screen == 9 ||screen == 10">
     <div class="lft1">
       <p class="{{ current[0] }} {{ infill[0] }}">1</p>
       <span class="{{ filldash[0] }}"></span>
@@ -141,8 +131,6 @@
     </div>
   </div>
 
-
-  <!-- screen 3  -->
   <!-- Right Slide 3-->
   <div class="right-side" *ngIf="screen == 3">
     <div class="up">
@@ -151,21 +139,21 @@
     </div>
 
     <div>
-    <div>
-      <p class="firhed2">Add terms of your campaign</p>
+      <div>
+        <p class="firhed2">Add terms of your campaign</p>
 
-      <div class="dtpic">
-        <div>
-          <p class="sedlin2">Campaign starts on</p>
-          <input class="picker" type="date">
+        <div class="dtpic">
+          <div>
+            <p class="sedlin2">Campaign starts on</p>
+            <input class="picker" type="date">
+          </div>
+
+          <div>
+            <p class="sedlin2">Campaign expires on</p>
+            <input class="picker" type="date">
+          </div>
         </div>
 
-        <div>
-          <p class="sedlin2">Campaign expires on</p>
-          <input class="picker" type="date">
-        </div>
-      </div>
-        
         <p class="sedlin2">Redemption per customer</p>
         <div class="rad foropt">
           <mat-radio-group aria-label="Select an option">
@@ -174,42 +162,56 @@
           </mat-radio-group>
         </div>
 
-      <p class="thilin2">Terms & Conditions</p>
-      <div class="area">
-        <ul class="unli">
-          <li>Minimum purchase required</li>
-          <li>2 offers cannot be clubbed</li>
-          <li>Reward cannot be exchanged for cash</li>
-          <li>Reward redeemable in-store only</li>
-          <li>Merchant reserves the right to the final say in case of any disputes</li>
-        </ul>
-      </div>
+        <p class="thilin2">Terms & Conditions</p>
+        <div class="area">
+          <ul class="unli">
+            <li>Minimum purchase required</li>
+            <li>2 offers cannot be clubbed</li>
+            <li>Reward cannot be exchanged for cash</li>
+            <li>Reward redeemable in-store only</li>
+            <li>Merchant reserves the right to the final say in case of any disputes</li>
+          </ul>
+        </div>
 
         <section class="check">
           <mat-checkbox class="example-margin">Minimum purchase required</mat-checkbox>
           <mat-checkbox class="example-margin">2 offers cannot be clubbed</mat-checkbox>
           <mat-checkbox class="example-margin">Reward cannot be exchanged for cash</mat-checkbox>
           <mat-checkbox class="example-margin">Reward redeemable in-store only</mat-checkbox>
-          <mat-checkbox class="example-margin">Merchant reserves the right to the final say in case of any disputes</mat-checkbox>
+          <mat-checkbox class="example-margin">Merchant reserves the right to the final say in case of any
+            disputes</mat-checkbox>
           <mat-checkbox class="example-margin">Additional T&C apply</mat-checkbox>
         </section>
 
-      <p class="sedlin2 lin3">Contact Number</p>
-      <input class="inptitle con" matInput placeholder="Contact number" />
-      <p class="sedlin2 con ltex">This will be included in your Campaign link, SMS, & WhatsApp</p>
-    </div>
+        <p class="sedlin2 lin3">Contact Number</p>
+        <input class="inptitle con" matInput placeholder="Contact number" />
+        <p class="sedlin2 con ltex">This will be included in your Campaign link, SMS, & WhatsApp</p>
+      </div>
 
-
-    <!--  screen 4  -->
-
-    <div class="dvnext nex2">
-      <button class="next" (click)="Next(4)">Next</button>
+      <div class="dvnext nex2">
+        <button class="next" (click)="Next(4)">Next</button>
+      </div>
     </div>
   </div>
 
+  <!-- Right Slide 4-->
+  <div class="right-side" *ngIf="screen == 4">
+    <div class="up">
+      <button class="back" (click)="back(3)">&#60;Back</button>
+      <button class="save">Save & Exit</button>
+    </div>
+
+    <p class="firhed2">Add terms of your campaign</p>
+
+    <p class="sedlin2">Logo</p>
+    <div class="area upl">
+
+    </div>
+    <p class="sedlin2 con ltex upnot">Recommended size 512 x 512 px in JPG, GIF or PNG format upto max size of 10MB</p>
 
 
-  <!-- screen 5  -->
-
-  
+    <div class="dvnext">
+      <button class="next" (click)="Next(5)">Next</button>
+    </div>
+  </div>
 </div>

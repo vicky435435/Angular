@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Ui-Development';
-  screen = 0;
+  screen = 4;
   crativecol = 'crative';
   whatsappcol = '';
   smscol = '';
@@ -66,9 +66,9 @@ export class AppComponent {
 
     if(this.screen == 3){
       this.current[2] = 'bar1'
-       this.filldash[1] = 'dash';
-       this.infill[1] = 'fill';
-       this.bar[2] = '';
+       this.filldash[2] = '';
+       this.infill[2] = '';
+       this.bar[3] = 'bar0';
      }
 
   }

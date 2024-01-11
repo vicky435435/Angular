@@ -429,3 +429,11 @@
     font-weight: 400;
     line-height: 140%; 
 }
+
+.upl{
+    height: 80px !important;
+}
+
+.upnot{
+    margin: 5px 0px 0px 30px !important;
+}
