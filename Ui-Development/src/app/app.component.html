@@ -2,53 +2,21 @@
   <!-- Left Slide -->
   <div class="left-side" *ngIf="screen == 0">
     <div class="three-selectors">
-      <button
-        class="crative"
-        id="{{ crativecol }}"
-        mat-stroked-button
-        (click)="crative()"
-      >
+      <button class="crative" id="{{ crativecol }}" mat-stroked-button (click)="crative()">
         Creative
       </button>
-      <button
-        class="crative"
-        id="{{ whatsappcol }}"
-        mat-stroked-button
-        (click)="whatsapp()"
-      >
+      <button class="crative" id="{{ whatsappcol }}" mat-stroked-button (click)="whatsapp()">
         WhatsApp
       </button>
-      <button
-        class="crative"
-        id="{{ smscol }}"
-        mat-stroked-button
-        (click)="sms()"
-      >
+      <button class="crative" id="{{ smscol }}" mat-stroked-button (click)="sms()">
         SMS
       </button>
     </div>
 
     <div class="cimg">
-      <img
-        *ngIf="crativecol"
-        class="crativeimg"
-        src="/assets/images/CreativeTemplate.png"
-        alt="Crative"
-      />
-      <img
-        *ngIf="whatsappcol"
-        class="crativeimg"
-        id="whatsappimg"
-        src="/assets/images/iPhone.png"
-        alt="Shatsapp"
-      />
-      <img
-        *ngIf="smscol"
-        class="crativeimg"
-        id="smsimg"
-        src="/assets/images/sms.png"
-        alt="SMS"
-      />
+      <img *ngIf="crativecol" class="crativeimg" src="/assets/images/CreativeTemplate.png" alt="Crative" />
+      <img *ngIf="whatsappcol" class="crativeimg" id="whatsappimg" src="/assets/images/iPhone.png" alt="Shatsapp" />
+      <img *ngIf="smscol" class="crativeimg" id="smsimg" src="/assets/images/sms.png" alt="SMS" />
     </div>
   </div>
 
@@ -68,9 +36,7 @@
   </div>
 
   <!-- Left Slide 1-->
-  <div
-    class="left-side"
-    *ngIf="
+  <div class="left-side" *ngIf="
       screen == 1 ||
       screen == 2 ||
       screen == 3 ||
@@ -81,8 +47,7 @@
       screen == 8 ||
       screen == 9 ||
       screen == 10
-    "
-  >
+    ">
     <div class="lft1">
       <p class="{{ current[0] }} {{ infill[0] }}">1</p>
       <span class="{{ filldash[0] }}"></span>
@@ -156,11 +121,8 @@
       <input class="inptitle" matInput placeholder="Campaign Title Here" />
 
       <p class="thilin2">Campaign Description</p>
-      <textarea
-        class="area"
-        matInput
-        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      ></textarea>
+      <textarea class="area" matInput
+        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."></textarea>
 
       <p class="sedlin2">Reward Type</p>
       <input class="inptitle" matInput placeholder="Redeem ₹ discount" />
@@ -169,8 +131,8 @@
 
     <div class="rad">
       <mat-radio-group aria-label="Select an option">
-        <mat-radio-button value="1">Option 1</mat-radio-button>
-        <mat-radio-button value="2">Option 2</mat-radio-button>
+        <mat-radio-button value="1">Entire Purchase</mat-radio-button>
+        <mat-radio-button value="2">Specific Product</mat-radio-button>
       </mat-radio-group>
     </div>
 
@@ -178,7 +140,7 @@
       <button class="next" (click)="Next(3)">Next</button>
     </div>
   </div>
-  
+
 
   <!-- screen 3  -->
   <!-- Right Slide 3-->
@@ -188,78 +150,55 @@
       <button class="save">Save & Exit</button>
     </div>
 
-    <div >
+    <div>
       <p class="firhed2">Add terms of your campaign</p>
 
-      <div class="date">
-        <p class="sedlin2">Campaign starts on</p>
+      <div class="dtpic">
         <div>
-         <input type="date">
+          <p class="sedlin2">Campaign starts on</p>
+          <input class="picker" type="date">
         </div>
 
-        <p class="sedlin2">Campaign expires on</p>
         <div>
-          <input type="date">
+          <p class="sedlin2">Campaign expires on</p>
+          <input class="picker" type="date">
         </div>
       </div>
-      <br />
-
-      <div class="rad">
+        
         <p class="sedlin2">Redemption per customer</p>
-        <mat-radio-group aria-label="Select an option">
-          <mat-radio-button value="1">Only once</mat-radio-button>
-          <mat-radio-button value="2">Multiple Items</mat-radio-button>
-        </mat-radio-group>
-      </div>
+        <div class="rad foropt">
+          <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">Only once</mat-radio-button>
+            <mat-radio-button class="multitem" value="2">Multiple Items</mat-radio-button>
+          </mat-radio-group>
+        </div>
 
       <p class="thilin2">Terms & Conditions</p>
       <div class="area">
-        <p>Minimum purchase required</p>
-        <p>2 offers cannot be clubbed</p>
-        <p>Reward cannot be exchanged for cash</p>
-        <p>Reward redeemable in-store only</p>
-        <p>
-          Merchant reserves the right to the final say in case of any disputes
-        </p>
+        <ul class="unli">
+          <li>Minimum purchase required</li>
+          <li>2 offers cannot be clubbed</li>
+          <li>Reward cannot be exchanged for cash</li>
+          <li>Reward redeemable in-store only</li>
+          <li>Merchant reserves the right to the final say in case of any disputes</li>
+        </ul>
       </div>
 
-      <div>
-        <section class="example-section">
-          <mat-checkbox class="example-margin checkbox"
-            >Minimum purchase required</mat-checkbox
-          >
-          <mat-checkbox class="example-margin checkbox"
-            >2 offers cannot be clubbed</mat-checkbox
-          >
-          <mat-checkbox class="example-margin checkbox"
-            >Reward cannot be exchanged for cash</mat-checkbox
-          >
-          <mat-checkbox class="example-margin checkbox"
-            >Reward redeemable in-store only</mat-checkbox
-          >
-          <mat-checkbox class="example-margin checkbox"
-            >Merchant reserves the right to the final say in case of any
-            disputes</mat-checkbox
-          >
+        <section class="check">
+          <mat-checkbox class="example-margin">Minimum purchase required</mat-checkbox>
+          <mat-checkbox class="example-margin">2 offers cannot be clubbed</mat-checkbox>
+          <mat-checkbox class="example-margin">Reward cannot be exchanged for cash</mat-checkbox>
+          <mat-checkbox class="example-margin">Reward redeemable in-store only</mat-checkbox>
+          <mat-checkbox class="example-margin">Merchant reserves the right to the final say in case of any disputes</mat-checkbox>
+          <mat-checkbox class="example-margin">Additional T&C apply</mat-checkbox>
         </section>
-      </div>
 
-      <p class="sedlin2">Contact Number</p>
-      <input class="inptitle" matInput placeholder="Contact number" />
-      <!-- <input class="inptitle" matInput placeholder="₹180 OFF"> -->
-       <p class="sedlin2">This will be included in your Campaign link, SMS, & WhatsApp</p>
+      <p class="sedlin2 lin3">Contact Number</p>
+      <input class="inptitle con" matInput placeholder="Contact number" />
+      <p class="sedlin2 con ltex">This will be included in your Campaign link, SMS, & WhatsApp</p>
     </div>
 
-
-    <!--  screen 4  -->
-
     <div class="dvnext nex2">
-    
-      <div>
-        <p class="firhed2">Review Campaign Creative</p>
-
-      </div>
-
       <button class="next" (click)="Next(4)">Next</button>
     </div>
   </div>
