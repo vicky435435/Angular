@@ -243,3 +243,115 @@
     background: #B40665;
     border: none;
 }
+
+.lft1{
+    margin: 34px 0px 0px 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+.fill{
+    background: #B40665 !important;
+    color: #FFF !important;
+}
+
+.dash{
+    margin: 17px 0 0 0;
+    width: 25px;
+    height: 3px;
+    color: #B40665;
+    background: #B40665;
+    border: none;
+}
+
+.bar1{
+    display: flex;
+    width: 32.83px;
+    height: 32.83px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 16.415px;
+    border: 1.97px solid #B40665;
+    background: #FFF;
+}
+
+.bar0{
+    margin: 0px 0px 0px 25px;
+    display: flex;
+    width: 32.83px;
+    height: 32.83px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 16.415px;
+    border: 1.97px solid #F6F9FC;
+    background: #FFF;
+}
+
+.inptitle{
+    margin: 16px 0px 0px 30px;
+    Width: 562px;
+    height: 42px;
+    padding: 0px 12px;
+    border: 1px solid #DFE5EF;
+}
+
+.firhed2{
+    margin: 30px 0px 0px 30px;
+    color: #2A3547;
+    font-family: Plus Jakarta Sans;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.sedlin2{
+    margin: 25px 0px 0px 30px;
+    color: #2A3547;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: -0.14px;
+}
+
+.thilin2{
+    margin: 20px 0px 0px 30px;
+    color: #2A3547;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: -0.14px;
+}
+
+.area{
+    margin: 8px 0px 0px 30px;
+    display: flex;
+    Width: 562px;
+    height: 122px;
+    padding: 0px 12px;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 4px;
+    border: 1px solid #DFE5EF;
+    background: #FFF;
+}
+
+.mat-mdc-radio-button ~ .mat-mdc-radio-button {
+    margin-left: 16px;
+    color: #B40665;
+}
+
+.rad{
+    margin: 15px 0px 0px 30px;
+}
+
+.nex2{
+    margin: 50px 167px 30px 0px !important;
+}

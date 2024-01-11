@@ -7,15 +7,12 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
-import { CampaignComponent } from './component/campaign/campaign.component';
-import { TestComponent } from './component/test/test.component';
-
+import {MatInputModule} from '@angular/material/input';
+import {MatRadioModule} from '@angular/material/radio';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CampaignComponent,
-    TestComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,6 +21,8 @@ import { TestComponent } from './component/test/test.component';
     BrowserAnimationsModule,
     MatGridListModule,
     MatButtonToggleModule,
+    MatInputModule,
+    MatRadioModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

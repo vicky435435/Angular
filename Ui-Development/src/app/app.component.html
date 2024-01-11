@@ -22,6 +22,100 @@
     <p class="firline">Present Campaign Name Here (5th Oct - 11th Nov)</p>
     <p class="secline">Campaign Title Here</p>
     <button class="freeitem"  mat-stroked-button> <img src="/assets/images/gift.png" alt="SMS">Free Item</button>
-    <button class="rightbtn"  mat-stroked-button>Customize & Send</button>
+    <button class="rightbtn" (click)="customizeandsend()" mat-stroked-button>Customize & Send</button>
   </div>
+
+  <!-- Left Slide 1-->
+  <div class="left-side" *ngIf="screen ==1|| screen ==2|| screen ==3|| screen ==4|| screen ==5|| screen ==6|| screen ==7|| screen ==8|| screen ==9|| screen ==10">
+    <div class="lft1">
+      <p class="{{current[0]}} {{infill[0]}}">1</p><span class="{{filldash[0]}}"></span>
+      <p class="{{bar[1]}} {{current[1]}} {{infill[1]}}">2</p><span class="{{filldash[1]}}"></span>
+      <p class="{{bar[2]}} {{current[2]}} {{infill[2]}}">3</p><span class="{{filldash[2]}}"></span>
+      <p class="{{bar[3]}} {{current[3]}} {{infill[3]}}">4</p><span class="{{filldash[3]}}"></span>
+      <p class="{{bar[4]}} {{current[4]}} {{infill[4]}}">5</p><span class="{{filldash[4]}}"></span>
+      <p class="{{bar[5]}} {{current[5]}} {{infill[5]}}">6</p><span class="{{filldash[5]}}"></span>
+      <p class="{{bar[6]}} {{current[6]}} {{infill[6]}}">7</p><span class="{{filldash[6]}}"></span>
+      <p class="{{bar[7]}} {{current[7]}} {{infill[7]}}">8</p><span class="{{filldash[7]}}"></span>
+      <p class="{{bar[8]}} {{current[8]}} {{infill[8]}}">9</p><span class="{{filldash[8]}}"></span>
+      <p class="{{bar[9]}} {{current[9]}} {{infill[9]}}">10</p><span class="{{filldash[9]}}"></span>
+    </div>
+  </div>
+
+  <!-- Right Slide 1-->
+  <div class="right-side" *ngIf="screen == 1">
+
+    <div class="up">
+      <button class="back" (click)="back(0)">&#60;Back</button>
+      <button class="save">Save & Exit</button>
+    </div>
+
+    <div>
+      <p class="firline1">How do you want to send the campaign?</p>
+      <p class="secline1">Select channels</p>
+
+      <div class="dvbtn">
+        <button class="s1btn" mat-stroked-button><img src="/assets/images/whatsapp.png" alt="whatsapp">WhatsApp</button>
+        <button class="s1btn" mat-stroked-button><img src="/assets/images/sms-outline.png" alt="SMS">SMS</button>
+        <button class="s1btn s1btn3" mat-stroked-button><img src="/assets/images/email.png" alt="Email">Email</button>
+      </div>
+
+      <div class="botdv1">
+        <img src="/assets/images/info-outline.png" alt="info">
+        WhatsApp messages will be sent to customers who have made a purchase. Opted-out and imported customers will be excluded.
+      </div>
+
+      <div class="dvnext">
+        <button class="next" (click)="Next(2)">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Slide 2-->
+  <div class="right-side" *ngIf="screen == 2">
+    <div class="up">
+      <button class="back" (click)="back(1)">&#60;Back</button>
+      <button class="save">Save & Exit</button>
+    </div>
+    
+    <div>
+      <p class="firhed2">What is this campaign about?</p>
+
+      <p class="sedlin2">Campaign Title</p>
+      <input class="inptitle" matInput placeholder="Campaign Title Here">
+        
+      <p class="thilin2">Campaign Description</p>
+      <textarea class="area" matInput placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."></textarea>
+
+      <p class="sedlin2">Reward Type</p>
+      <input class="inptitle" matInput placeholder="Redeem ₹ discount">
+      <input class="inptitle" matInput placeholder="₹180 OFF">
+    </div>
+
+    <div class="rad">
+      <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">Option 1</mat-radio-button>
+        <mat-radio-button value="2">Option 2</mat-radio-button>
+      </mat-radio-group>
+    </div>
+
+    <div class="dvnext nex2">
+      <button class="next" (click)="Next(3)">Next</button>
+    </div>
+  </div>
+
+
+  <!-- Right Slide 1-->
+  <div class="right-side" *ngIf="screen == 3">
+    <div class="up">
+      <button class="back" (click)="back(2)">&#60;Back</button>
+      <button class="save">Save & Exit</button>
+    </div>
+
+
+    <div class="dvnext nex2">
+      <button class="next" (click)="Next(4)">Next</button>
+    </div>
+  </div>
+
+
 </div>
