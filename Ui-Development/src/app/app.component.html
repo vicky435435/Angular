@@ -2,53 +2,21 @@
   <!-- Left Slide -->
   <div class="left-side" *ngIf="screen == 0">
     <div class="three-selectors">
-      <button
-        class="crative"
-        id="{{ crativecol }}"
-        mat-stroked-button
-        (click)="crative()"
-      >
+      <button class="crative" id="{{ crativecol }}" mat-stroked-button (click)="crative()">
         Creative
       </button>
-      <button
-        class="crative"
-        id="{{ whatsappcol }}"
-        mat-stroked-button
-        (click)="whatsapp()"
-      >
+      <button class="crative" id="{{ whatsappcol }}" mat-stroked-button (click)="whatsapp()">
         WhatsApp
       </button>
-      <button
-        class="crative"
-        id="{{ smscol }}"
-        mat-stroked-button
-        (click)="sms()"
-      >
+      <button class="crative" id="{{ smscol }}" mat-stroked-button (click)="sms()">
         SMS
       </button>
     </div>
 
     <div class="cimg">
-      <img
-        *ngIf="crativecol"
-        class="crativeimg"
-        src="/assets/images/CreativeTemplate.png"
-        alt="Crative"
-      />
-      <img
-        *ngIf="whatsappcol"
-        class="crativeimg"
-        id="whatsappimg"
-        src="/assets/images/iPhone.png"
-        alt="Shatsapp"
-      />
-      <img
-        *ngIf="smscol"
-        class="crativeimg"
-        id="smsimg"
-        src="/assets/images/sms.png"
-        alt="SMS"
-      />
+      <img *ngIf="crativecol" class="crativeimg" src="/assets/images/CreativeTemplate.png" alt="Crative" />
+      <img *ngIf="whatsappcol" class="crativeimg" id="whatsappimg" src="/assets/images/iPhone.png" alt="Shatsapp" />
+      <img *ngIf="smscol" class="crativeimg" id="smsimg" src="/assets/images/sms.png" alt="SMS" />
     </div>
   </div>
 
@@ -68,21 +36,8 @@
   </div>
 
   <!-- Left Slide 1-->
-  <div
-    class="left-side"
-    *ngIf="
-      screen == 1 ||
-      screen == 2 ||
-      screen == 3 ||
-      screen == 4 ||
-      screen == 5 ||
-      screen == 6 ||
-      screen == 7 ||
-      screen == 8 ||
-      screen == 9 ||
-      screen == 10
-    "
-  >
+  <div class="left-side"
+    *ngIf=" screen == 1 ||screen == 2 ||screen == 3 ||screen == 4 ||screen == 5 ||screen == 6 ||screen == 7 ||screen == 8 ||screen == 9 ||screen == 10">
     <div class="lft1">
       <p class="{{ current[0] }} {{ infill[0] }}">1</p>
       <span class="{{ filldash[0] }}"></span>
@@ -156,11 +111,8 @@
       <input class="inptitle" matInput placeholder="Campaign Title Here" />
 
       <p class="thilin2">Campaign Description</p>
-      <textarea
-        class="area"
-        matInput
-        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      ></textarea>
+      <textarea class="area" matInput
+        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."></textarea>
 
       <p class="sedlin2">Reward Type</p>
       <input class="inptitle" matInput placeholder="Redeem ₹ discount" />
@@ -168,9 +120,9 @@
     </div>
 
     <div class="rad">
-      <mat-radio-group aria-label="Select an option">
-        <mat-radio-button value="1">Option 1</mat-radio-button>
-        <mat-radio-button value="2">Option 2</mat-radio-button>
+      <mat-radio-group aria-label="Select an option" value="1">
+        <mat-radio-button value="1">Entire Purchase</mat-radio-button>
+        <mat-radio-button value="2">Specific Product</mat-radio-button>
       </mat-radio-group>
     </div>
 
@@ -179,7 +131,6 @@
     </div>
   </div>
 
-  <!-- screen 3  -->
   <!-- Right Slide 3-->
   <div class="right-side" *ngIf="screen == 3">
     <div class="up">
@@ -188,218 +139,197 @@
     </div>
 
     <div>
-      <p class="firhed2">Add terms of your campaign</p>
-
-      <div class="date">
-        <p class="sedlin2">Campaign starts on</p>
-        <div>
-          <input type="date" />
-        </div>
-
-        <p class="sedlin2">Campaign expires on</p>
-        <div>
-          <input type="date" />
-        </div>
-      </div>
-      <br />
-
-      <div class="rad">
-        <p class="sedlin2">Redemption per customer</p>
-        <mat-radio-group aria-label="Select an option">
-          <mat-radio-button value="1">Only once</mat-radio-button>
-          <mat-radio-button value="2">Multiple Items</mat-radio-button>
-        </mat-radio-group>
-      </div>
-
-      <p class="thilin2">Terms & Conditions</p>
-      <div class="area">
-        <p>Minimum purchase required</p>
-        <p>2 offers cannot be clubbed</p>
-        <p>Reward cannot be exchanged for cash</p>
-        <p>Reward redeemable in-store only</p>
-        <p>
-          Merchant reserves the right to the final say in case of any disputes
-        </p>
-      </div>
-
       <div>
-        <section class="example-section">
-          <mat-checkbox class="example-margin checkbox"
-            >Minimum purchase required</mat-checkbox
-          >
-          <mat-checkbox class="example-margin checkbox"
-            >2 offers cannot be clubbed</mat-checkbox
-          >
-          <mat-checkbox class="example-margin checkbox"
-            >Reward cannot be exchanged for cash</mat-checkbox
-          >
-          <mat-checkbox class="example-margin checkbox"
-            >Reward redeemable in-store only</mat-checkbox
-          >
-          <mat-checkbox class="example-margin checkbox"
-            >Merchant reserves the right to the final say in case of any
-            disputes</mat-checkbox
-          >
+        <p class="firhed2">Add terms of your campaign</p>
+
+        <div class="dtpic">
+          <div>
+            <p class="sedlin2">Campaign starts on</p>
+            <input class="picker" type="date">
+          </div>
+
+          <div>
+            <p class="sedlin2">Campaign expires on</p>
+            <input class="picker" type="date">
+          </div>
+        </div>
+
+        <p class="sedlin2">Redemption per customer</p>
+        <div class="rad foropt">
+          <mat-radio-group aria-label="Select an option" value="1">
+            <mat-radio-button value="1">Only once</mat-radio-button>
+            <mat-radio-button class="multitem" value="2">Multiple Items</mat-radio-button>
+          </mat-radio-group>
+        </div>
+
+        <p class="thilin2">Terms & Conditions</p>
+        <div class="area">
+          <ul class="unli">
+            <li>Minimum purchase required</li>
+            <li>2 offers cannot be clubbed</li>
+            <li>Reward cannot be exchanged for cash</li>
+            <li>Reward redeemable in-store only</li>
+            <li>Merchant reserves the right to the final say in case of any disputes</li>
+          </ul>
+        </div>
+
+        <section class="checkbox">
+          <mat-checkbox class="example-margin">Minimum purchase required</mat-checkbox>
+          <mat-checkbox class="example-margin">2 offers cannot be clubbed</mat-checkbox>
+          <mat-checkbox class="example-margin">Reward cannot be exchanged for cash</mat-checkbox>
+          <mat-checkbox class="example-margin">Reward redeemable in-store only</mat-checkbox>
+          <mat-checkbox class="example-margin">Merchant reserves the right to the final say in case of any
+            disputes</mat-checkbox>
+          <mat-checkbox class="example-margin">Additional T&C apply</mat-checkbox>
         </section>
+
+        <p class="sedlin2 lin3">Contact Number</p>
+        <input class="inptitle con" matInput placeholder="Contact number" />
+        <p class="sedlin2 con ltex">This will be included in your Campaign link, SMS, & WhatsApp</p>
       </div>
 
-      <p class="sedlin2">Contact Number</p>
-      <input class="inptitle" matInput placeholder="Contact number" />
-      <!-- <input class="inptitle" matInput placeholder="₹180 OFF"> -->
-      <p class="sedlin2">
-        This will be included in your Campaign link, SMS, & WhatsApp
-      </p>
-    </div>
-
-    <!--  screen 4  -->
-
-    <div class="dvnext nex2">
-      <button class="next" (click)="Next(4)">Next</button>
+      <div class="dvnext nex2">
+        <button class="next" (click)="Next(4)">Next</button>
+      </div>
     </div>
   </div>
 
+  <!-- Right Slide 4-->
   <div class="right-side" *ngIf="screen == 4">
     <div class="up">
-      <button class="back" (click)="back(0)">&#60;Back</button>
+      <button class="back" (click)="back(3)">&#60;Back</button>
       <button class="save">Save & Exit</button>
     </div>
 
+    <p class="firhed2">Add terms of your campaign</p>
+
+    <p class="sedlin2">Logo</p>
+    <div class="area upl">
+
+    </div>
+    <p class="sedlin2 con ltex upnot">Recommended size 512 x 512 px in JPG, GIF or PNG format upto max size of 10MB</p>
+
+
     <div>
-      <p class="firline1">Review Campaign Creative</p>
-      <p class="secline1"><strong>Logo</strong></p>
+      <p class="secline1"><strong>Banner Image</strong></p>
 
-      <div class="fileInputBox"><input type="file" /> Upload your Logo</div>
-      <p>
-        Recommended size 512 x 512 px in JPG, GIF or PNG format upto max size of
-        10MB
-      </p>
+      <div class="dtpic">
+        <div>
+          <p class="sedlin2">Theme Color</p>
+          <input class="picker" type="text" placeholder="#185abc">
+        </div>
 
-      <div class="colorBox">
-        <p class="secline1"><strong>Theme Color</strong></p>
-        <input type="color" name="" id="" />
-
-        <p class="secline1"><strong>Text Color</strong></p>
-        <input type="color" name="" id="" />
+        <div>
+          <p class="sedlin2">Text Color</p>
+          <input class="picker" type="text" placeholder="#FFFFFF">
+        </div>
       </div>
 
-      <div>
-        <p class="secline1"><strong>Banner Image</strong></p>
 
-        <div class="fileInputBox"><input type="file" /> Upload your Image</div>
-        <p>
-          Recommended size 512 x 512 px in JPG, GIF or PNG format upto max size
-          of 10MB
-        </p>
-       
+      <p class="sedlin2">Banner Image</p>
+      <div class="area upl">
 
-        <div class="imagesBox">
-          <div >
-            <img src="/assets/images/blog-img1.png" alt="">
-            <h4>My Library</h4>
-            <p>17 Images | 5 Videos</p>
-          </div>
+      </div>
+      <p class="sedlin2 con ltex upnot">Recommended size 512 x 512 px in JPG, GIF or PNG format upto max size of 10MB
+      </p>
 
-          <!-- <div>
-            <img src="/assets/images/blog-img1.png" alt="">
-            <h4>My Library</h4>
-            <p>17 Images | 5 Videos</p>
-          </div>
-
-          <div>
-            <img src="/assets/images/blog-img1.png" alt="">
-            <h4>My Library</h4>
-            <p>17 Images | 5 Videos</p>
-          </div>
-
-          <div>
-            <img src="/assets/images/blog-img1.png" alt="">
-            <h4>My Library</h4>
-            <p>17 Images | 5 Videos</p>
-          </div> -->
+      <div class="imagesBox">
+        <div>
+          <img class="im4" src="/assets/images/blog-img1.png" alt="">
+          <h4 class="mylib4">My Library</h4>
+          <p class="mylib4">17 Images | 5 Videos</p>
         </div>
-        <div class="dvnext">
-          <button class="next" (click)="Next(5)">Next</button>
+
+        <div>
+          <img class="im4" src="/assets/images/blog-img1.png" alt="">
+          <h4 class="mylib4">My Library</h4>
+          <p class="mylib4">17 Images | 5 Videos</p>
         </div>
+
+        <div>
+          <img class="im4" src="/assets/images/blog-img1.png" alt="">
+          <h4 class="mylib4">My Library</h4>
+          <p class="mylib4">17 Images | 5 Videos</p>
+        </div>
+
+      </div>
+      <div  class="imagesBox">
+        <div>
+          <img class="im4" src="/assets/images/blog-img1.png" alt="">
+          <h4 class="mylib4">My Library</h4>
+          <p class="mylib4">17 Images | 5 Videos</p>
+        </div>
+      </div>
+
+      <div class="dvnext nxt4">
+        <button class="next" (click)="Next(5)">Next</button>
       </div>
     </div>
   </div>
+
 
 
 
   <!-- screen 5  -->
 
-  
+
   <div class="right-side" *ngIf="screen == 5">
     <div class="up">
-      <button class="back" (click)="back(0)">&#60;Back</button>
+      <button class="back" (click)="back(4)">&#60;Back</button>
       <button class="save">Save & Exit</button>
     </div>
 
     <div>
-      <p class="firline1">Review WhatsApp Message</p>
-      <!-- <p class="secline1"><strong>Edit message</strong></p> -->
+      <p class="firline1 hed5">Review WhatsApp Message</p>
 
       <p class="thilin2">Edit message</p>
-      <textarea
-        class="area"
-        matInput
-        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      ></textarea>
+      <textarea class="area scr5" matInput
+        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat To stop receiving messages from Sample Cafe click l.lol.io/jki9o"></textarea>
       <p class="linkCopy">Campaign link: l.lol.io/sKjh0 </p>
 
 
+      <p class="sedlin2">Header</p>
+      <div class="rad foropt">
+        <mat-radio-group aria-label="Select an option" value="1">
+          <mat-radio-button value="1">Default image</mat-radio-button>
+          <mat-radio-button class="multitem" value="2">Add your own</mat-radio-button>
+        </mat-radio-group>
+      </div>
 
       <div>
-        <p class="thilin2">Header</p>
-
-        <div class="imagesBox">
-          <div class="rad">
-            <mat-radio-group aria-label="Select an option">
-              <mat-radio-button value="1">Defult Image</mat-radio-button>
-              <mat-radio-button value="2">Add your own</mat-radio-button>
-            </mat-radio-group>
-          </div>
-        </div>
-        <br>
-        <br>
-        <br>
-
-        
         <div>
           <button class="uploadBtn"><img src="/assets/images/material-symbols_upload.png" alt="">Upload</button>
           <p class="fiveText">Recommended size 512 x 512 px in JPG, GIF or PNG format upto max size of 10MB</p>
         </div>
-    
-         
+
+
 
         <div>
           <p class="thilin2">Select Phone Number</p>
           <input type="number" class="inptitle" matInput placeholder="Contact number" />
-          
+
         </div>
 
         <div>
           <p class="thilin2">Buttons</p>
           <br>
           <p class="thilin2">Buttons1</p>
-          
+
         </div>
-
-
 
         <div>
           <p class="thilin2">Link</p>
-          <input type="text" class="inptitle" matInput placeholder="l.fig.wi/90PuF" />  
+          <input type="text" class="inptitle" matInput placeholder="l.fig.wi/90PuF" />
         </div>
 
 
         <div>
           <p class="thilin2">Button label</p>
-          <input type="text" class="inptitle" matInput placeholder="Learn more" />  
+          <input type="text" class="inptitle" matInput placeholder="Learn more" />
           <img src="" alt="">
         </div>
 
-        <div class="dvnext">
+        <div class="dvnext nxt5">
           <button class="next" (click)="Next(6)">Next</button>
         </div>
       </div>
@@ -412,20 +342,16 @@
 
   <div class="right-side" *ngIf="screen == 6">
     <div class="up">
-      <button class="back" (click)="back(0)">&#60;Back</button>
+      <button class="back" (click)="back(5)">&#60;Back</button>
       <button class="save">Save & Exit</button>
     </div>
 
     <div>
-      <p class="firline1">Review SMS  </p>
-      <!-- <p class="secline1"><strong>Edit message</strong></p> -->
+      <p class="firline1">Review SMS </p>
 
       <p class="thilin2">Edit SMS <span>Edit SMS (Character length: 484 / 2 credit)</span></p>
 
-      <textarea
-        class="area"
-        matInput
-        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      <textarea class="area are6" matInput placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         
@@ -433,42 +359,29 @@
         
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         
-        To stop receiving messages from Sample Cafe click l.lol.io/jki9o."
-      ></textarea>
+        To stop receiving messages from Sample Cafe click l.lol.io/jki9o."></textarea>
       <p class="linkCopy">Campaign link: l.lol.io/sKjh0 </p>
 
-
+      <p class="sedlin2">Campaign Link:</p>
+      <div class="rad foropt">
+        <mat-radio-group aria-label="Select an option" value="1">
+          <mat-radio-button value="1">Figwi Link</mat-radio-button>
+          <mat-radio-button class="multitem" value="2">Custom Link</mat-radio-button>
+        </mat-radio-group>
+      </div>
 
       <div>
-        <p class="thilin2">Campaign Link:</p>
-
-        <div class="imagesBox">
-          <div class="rad">
-            <mat-radio-group aria-label="Select an option">
-              <mat-radio-button value="1">Figwi Link</mat-radio-button>
-              <mat-radio-button value="2">Custom Link</mat-radio-button>
-            </mat-radio-group>
-          </div>
-        </div>
-        <br>
-        <br>
-        <br>
-
         <div class="linkBox">
           <h2>l.fig.wi/f_7pir</h2>
-          <p>This link will take your customer to the campaign page. </p> 
-          <mat-icon>file_copy</mat-icon><span>Copy</span>  
+          <p class="fiveText">This link will take your customer to the campaign page.</p>
+          <mat-icon>file_copy</mat-icon><span>Copy</span>
         </div>
-
       </div>
-      <div class="dvnext">
+      <div class="dvnext nxt6">
         <button class="next" (click)="Next(7)">Send for approval</button>
       </div>
     </div>
   </div>
-
-
-  <!--  SCREEN 7 -->
 
   <div class="right-side" *ngIf="screen == 7">
     <div class="up">
@@ -477,73 +390,18 @@
     </div>
 
     <div>
-      <p class="firline1">Review SMS  </p>
-      <!-- <p class="secline1"><strong>Edit message</strong></p> -->
+      <p class="firline1">Review Email </p>
 
-      <p class="thilin2">Edit SMS <span>Edit SMS (Character length: 484 / 2 credit)</span></p>
+      <p class="thilin2">Subject Email</p>
+      <input type="text" class="inptitle" matInput placeholder="Pre-defined subject goes here" />
 
-      <textarea
-        class="area"
-        matInput
-        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        
-        To stop receiving messages from Sample Cafe click l.lol.io/jki9o."
-      ></textarea>
-      <p class="linkCopy">Campaign link: l.lol.io/sKjh0 </p>
-
-
-
-      <div>
-        <p class="thilin2">Campaign Link:</p>
-
-        <div class="imagesBox">
-          <div class="rad">
-            <mat-radio-group aria-label="Select an option">
-              <mat-radio-button value="1">Figwi Link</mat-radio-button>
-              <mat-radio-button value="2">Custom Link</mat-radio-button>
-            </mat-radio-group>
-          </div>
-        </div>
-        <br>
-        <br>
-        <br>
-
-        <div>
-          <p class="thilin2">Enter your custom link that you want to include instead of Figwi campaign link.</p>
-          <input type="text" class="inptitle" matInput placeholder="https://order.example.com" />  
-        </div>
-        <br>
-        <br>
-      
-        <div class="seven">
-          <p>Or</p>
-          <div>
-            <section class="example-section">
-              <mat-checkbox class="example-margin checkbox"
-                >Convert file into link</mat-checkbox
-              >
-            </section>
-          </div>
-          <button class="uploadBtnfive"><img src="/assets/images/material-symbols_upload.png" alt="">Upload Your File</button>
-
-        </div>
-
-     
-      </div>
       <div class="dvnext">
-        <button class="next" (click)="Next(8)">Send for approval</button>
+        <button class="next" (click)="Next(8)">Next</button>
       </div>
     </div>
   </div>
 
-
-  <!-- SCREEN 8 -->
+  <!-- SCREEN 9  -->
 
   <div class="right-side" *ngIf="screen == 8">
     <div class="up">
@@ -552,11 +410,30 @@
     </div>
 
     <div>
-      <p class="firline1">Review Email </p>
-      <!-- <p class="secline1"><strong>Edit message</strong></p> -->
+      <p class="firline1">Who do you want to send to? </p>
+      <p class="thilin2">Select audience</p>
+      <br>
 
-      <p class="thilin2">Subject Email</p>
-      <input type="text" class="inptitle" matInput placeholder="Pre-defined subject goes here" /> 
+
+
+      <div class="nineBtn">
+        All Customers (2090)
+      </div>
+
+      <div class="inptitle pg9">
+        <p>Target Groups</p>
+        <p>Choose from pre-packed segments</p>
+      </div>
+
+      <div class="inptitle pg9">
+        <p>Advanced Filters</p>
+        <p>Make your own customer group</p>
+      </div>
+
+
+
+
+
 
       <div class="dvnext">
         <button class="next" (click)="Next(9)">Next</button>
@@ -564,44 +441,4 @@
     </div>
   </div>
 
-  <!-- SCREEN 9  -->
-
-  <div class="right-side" *ngIf="screen == 9">
-    <div class="up">
-      <button class="back" (click)="back(8)">&#60;Back</button>
-      <button class="save">Save & Exit</button>
-    </div>
-
-    <div>
-      <p class="firline1">Who do you want to send to? </p>
-      <p class="thilin2">Select audience</p>
-      <br>
-
-  
-
-      <div class="nineBtn">
-       All Customers (2090)
-      </div>
-      <br>
-
-      <div class="nineBtntwo">
-        <h4>Target Group</h4>
-      </div>
-      <br>
-
-      <!-- <div class="nineBtntwo">
-        <h4>Advanced Filters</h4>
-      </div> -->
-
-
-      
-
-
-      <div class="dvnext">
-        <button class="next" (click)="Next(10)">Next</button>
-      </div>
-    </div>
-  </div>
-
-  
 </div>
